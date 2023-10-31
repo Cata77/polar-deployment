@@ -20,7 +20,7 @@ spec:
             - name: POSTGRES_USER
               value: user
             - name: POSTGRES_PASSWORD
-              value: password 
+              value: password
             - name: POSTGRES_DB
               value: polardb_catalog
           resources:
@@ -44,6 +44,6 @@ spec:
   selector:
     db: polar-postgres
   ports:
-  - protocol: TCP
-    port: 5432
-    targetPort: 5432
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
